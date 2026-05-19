@@ -64,3 +64,50 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/* Основной контейнер для двух колонок */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Общие стили для секций */
+.section {
+  width: 100%; /* Секция профиля занимает всю ширину */
+  margin-bottom: 40px;
+}
+
+/* Стили секции Profile */
+.section-profile {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Расстояние между фото и текстом */
+  border-bottom: 2px solid #e1e1e1; /* Линия под всем профилем */
+  padding-bottom: 30px;
+}
+
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Делает фото идеально круглым */
+  object-fit: cover;  /* Чтобы фото не сжималось и не растягивалось */
+  border: 3px solid #2f2b3a;
+}
+
+.profile-name {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  color: #2f2b3a;
+  letter-spacing: 1px;
+}
+
+.profile-job {
+  font-size: 18px;
+  margin: 0;
+  color: #7f8c8d;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
