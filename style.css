@@ -64,7 +64,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-/* Основной контейнер для двух колонок */
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -72,9 +72,9 @@ a {
   padding-bottom: 40px;
 }
 
-/* Общие стили для секций */
+
 .section {
-  width: 100%; /* Секция профиля занимает всю ширину */
+  width: 100%; 
   margin-bottom: 40px;
 }
 
@@ -82,16 +82,16 @@ a {
 .section-profile {
   display: flex;
   align-items: center;
-  gap: 40px; /* Расстояние между фото и текстом */
-  border-bottom: 2px solid #e1e1e1; /* Линия под всем профилем */
+  gap: 40px; 
+  border-bottom: 2px solid #e1e1e1; 
   padding-bottom: 30px;
 }
 
 .avatar-img {
   width: 150px;
   height: 150px;
-  border-radius: 50%; /* Делает фото идеально круглым */
-  object-fit: cover;  /* Чтобы фото не сжималось и не растягивалось */
+  border-radius: 50%; 
+  object-fit: cover;  
   border: 3px solid #2f2b3a;
 }
 
@@ -111,28 +111,28 @@ a {
   font-weight: 300;
   letter-spacing: 2px;
 }
-/* Стили для заголовков всех секций */
+
 .section-title {
   font-size: 20px;
   text-transform: uppercase;
   color: #2f2b3a;
   margin: 0 0 20px 0;
   padding-top: 15px;
-  border-top: 2px solid #2f2b3a; /* Верхняя разделительная линия из примера */
+  border-top: 2px solid #2f2b3a; 
   letter-spacing: 1px;
 }
 
-/* Класс для деления секций пополам (две колонки) */
+
 .section-half {
-  width: calc(50% - 20px); /* Занимает половину ширины экрана минус отступы */
+  width: calc(50% - 20px); 
 }
 
-/* Чтобы секции Contacts и Summary не слипались, добавим отступы для четных/нечетных */
+
 .section-half:nth-of-type(odd) {
   margin-right: 40px;
 }
 
-/* Текстовые абзацы */
+
 .section-text {
   margin: 0;
   font-size: 14px;
@@ -141,7 +141,7 @@ a {
   text-align: justify;
 }
 
-/* Списки контактов */
+
 .contacts-list {
   list-style: none;
   padding: 0;
@@ -172,6 +172,55 @@ a {
 
 .contacts-text {
   color: #555555;
+}
+
+.skills-list {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.skills-item {
+  position: relative;      
+  padding-left: 25px;       
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.4;
+}
+
+
+.skills-item::before {
+  content: "";               
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); 
+  width: 8px;
+  height: 8px;
+  background-color: #6c5ce7; 
+  border-radius: 50%;      
+}
+
+
+.code-wrapper {
+  background-color: #f8f9fa; 
+  border: 1px solid #e1e1e1;
+  border-left: 4px solid #6c5ce7;
+  border-radius: 4px;
+  padding: 15px;
+  overflow-x: auto;          
+}
+
+.code-block {
+  margin: 0;
+}
+
+.code-block code {
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 13px;
+  color: #2f2b3a;
+  line-height: 1.5;
 }
 
 
