@@ -238,6 +238,40 @@ a {
   letter-spacing: 0.5px;
 }
 
+/* ==========================================================================
+   Адаптивные стили для мобильных устройств (экраны меньше 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-link {
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .section-profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .avatar-img {
+    width: 120px;
+    height: 120px;
+  }
+  .section-half {
+    width: 100%;
+    margin-right: 0 !important; 
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+}
 
 
 
