@@ -57,7 +57,7 @@ body {
 
 
 .nav-link:hover {
-  color: #459648;            
+  color: #31782f;            
 }
 
 a {
@@ -118,7 +118,7 @@ a {
   color: #2f2b3a;
   margin: 0 0 20px 0;
   padding-top: 15px;
-  border-top: 2px solid #2f2b3a; 
+  border-top: 2px solid #31782f; 
   letter-spacing: 1px;
 }
 
@@ -198,7 +198,7 @@ a {
   transform: translateY(-50%); 
   width: 8px;
   height: 8px;
-  background-color: #6c5ce7; 
+  background-color: #31782f; 
   border-radius: 50%;      
 }
 
@@ -224,7 +224,7 @@ a {
 }
 /* Стили для подвала сайта (Footer) */
 .footer {
-  background-color: #2f2b3a; /* Фиолетово-серый фон, как у шапки */
+  background-color: #31782f; /* Фиолетово-серый фон, как у шапки */
   color: #ffffff;
   padding: 20px 0;
   margin-top: 40px;
